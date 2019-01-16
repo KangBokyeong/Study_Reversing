@@ -29,3 +29,8 @@
 - SectionAlignment가 4096byte일 때 Section의 크기가 **100byte** 라면, 해당 Section은 **4096byte**의 크기를 가짐.
 ### Ex2
 - SectionAlignment가 4096byte일 때 Section의 크기가 **5000byte** 라면, 해당 Section은 **8192byte**만큼의 크기를 가짐.
+
+<!-- Endian Notation -->
+만약 00 10 01 00 이라는 데이터가 있을 때,
+### 리틀 엔디언: 00 01 10 00 으로 읽음
+### 빅 엔디언: 00 10 01 00 으로 읽음
