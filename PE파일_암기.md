@@ -1,6 +1,6 @@
 # PE파일 암기!
 <!-- RVA와 VA -->
-## RVA(Relative Virual Address) + Image Base = VA(Virtual Address)
+## 1. RVA(Relative Virual Address) + Image Base = VA(Virtual Address)
 ### RVA(Relative Virual Address)
 - PE파일 구조에서 흔히 말하는 offset 값.
 - 위 문장에 대한 이유는 구조의 재배치 때문임. [Ex) dll 로딩]
@@ -12,7 +12,7 @@
 - RVA(1000) + Image Base(0400000) = VA(0401000)
 
 <!-- 크기 -->
-## WORD와 DWORD의 크기
+## 2. WORD와 DWORD의 크기
 - **1byte** = **8bit**
 ### WORD
 - 16bit = 2byte
@@ -23,7 +23,7 @@
 - ASCII 문자의 크기: (Approximitly) 1byte (≒ 7byte)
 
 <!-- SectionAlignment -->
-## SectionAlignment
+## 3. SectionAlignment
 - Sectiond의 크기에 대한 단위
 ### Ex1
 - SectionAlignment가 4096byte일 때 Section의 크기가 **100byte** 라면, 해당 Section은 **4096byte**의 크기를 가짐.
@@ -31,7 +31,7 @@
 - SectionAlignment가 4096byte일 때 Section의 크기가 **5000byte** 라면, 해당 Section은 **8192byte**만큼의 크기를 가짐.
 
 <!-- Endian Notation -->
-## 빅 & 리틀 엔디언의 차이
+## 4. 빅 & 리틀 엔디언의 차이
 만약 "00 10 01 00" 이라는 데이터가 있을 때,
 
 ### 리틀 엔디언
@@ -42,7 +42,7 @@
 - 왼쪽에서 
 
 <!-- 8byte register -->
-## 8바이트 레지스터
+## 5. 8바이트 레지스터
 - AL, AH, BL, BH, CL, CH, DL, DH로 이루어져 있음
 - 여기서 L은 low byte, H는 high byte를 의미함
 - 사실, AX와 DX는 각각 AL,AH와 DL,DH의 조합임.
