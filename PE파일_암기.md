@@ -40,3 +40,9 @@
 ### 빅 엔디언
 - "00 10 01 00" 순으로 읽음
 - 왼쪽에서 
+
+<!-- 8byte register -->
+## 8바이트 레지스터
+- AL, AH, BL, BH, CL, CH, DL, DH로 이루어져 있음
+- 여기서 L은 low byte, H는 high byte를 의미함
+- 사실, AX와 DX는 각각 AL,AH와 DL,DH의 조합임.
